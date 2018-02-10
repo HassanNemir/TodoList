@@ -1,5 +1,5 @@
 
 <?php
 
-        echo $user->'name';
-        ?>
+echo $user->'name';
+?>

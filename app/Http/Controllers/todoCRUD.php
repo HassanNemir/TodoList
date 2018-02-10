@@ -50,7 +50,7 @@ class todoCRUD extends Controller
                return view('Todo.view')->withTitle('Saved');
            }else{
                 $tasks = array('todo'=> $task);
-               return view('Todo.edit',$tasks);
+               return view('Todo.edit',compact('tasks'));
 
            }
     }

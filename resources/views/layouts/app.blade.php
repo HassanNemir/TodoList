@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-
+    <script src="{{ asset('js/app.js') }}"></script>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -16,8 +16,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    <!-- Data table style sheet -->
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -72,8 +73,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="{{route('view')}}">Tasks</a> </li>
-                            <li><a href="{{route('add')}}">Add Task</a> </li>
+                            <li><a href="/view">Tasks</a> </li>
+                            <li><a href="/add">Add Task</a> </li>
                         @endif
                     </ul>
                 </div>
@@ -84,7 +85,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+
+
 
 
 

@@ -61,7 +61,7 @@
                                 <label  class="col-md-4 control-label">Captcha</label>
                                 <div class="col-md-6">
                                     <input type="hidden" name="_token" value="{{csrf_token()}}">
-                                    <p>  <?php print_r(captcha_img()) ?> </p>
+                                    <p> {{print_r(captcha_img())}}    </p>
                                     <p><input type="text" name="captcha" class="form-control"></p>
 
                                     @if ($errors->has('captcha'))

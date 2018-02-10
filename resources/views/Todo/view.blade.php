@@ -2,7 +2,7 @@
 
 @section('content')
 
-<table id="view" >
+<table id="views" >
     <thead>
     <tr>
         <td>
